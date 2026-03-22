@@ -29,3 +29,42 @@ Check out the live demo here: [EduTech Live](https://codebyalpesh.github.io/edut
 ---
 
 ## 📂 Project Structure
+edutech/
+├─ index.html
+├─ css/
+│ ├─ styles.css
+├─ js/
+│ ├─ main.js
+├─ assets/
+│ ├─ images/
+│ ├─ icons/
+└─ README.md
+
+
+---
+
+## ⚡ Getting Started
+
+### Clone the repository
+```bash
+git clone https://github.com/codebyalpesh/edutech.git
+cd edutech
+
+Open in Browser
+
+Simply open index.html in your favorite browser or use Live Server in VS Code.
+
+🎯 Purpose
+
+EduTech enhances online learning by providing a clean, interactive, and modular platform suitable for:
+
+Educational institutions
+Online course platforms
+Self-paced learning projects
+
+📸 Screenshots
+<img width="1366" height="4169" alt="edutech" src="https://github.com/user-attachments/assets/1e6bbae9-bfa6-4133-9f28-a17e16cf09c1" />
+
+📄 License
+
+This project is open-source and available under the MIT License.
