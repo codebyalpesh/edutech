@@ -12,44 +12,47 @@ Check out the live demo here: [EduTech Live](https://codebyalpesh.github.io/edut
 ---
 
 ## 🚀 Features
-- Fully responsive UI for desktop and mobile  
-- Interactive course and lesson modules  
-- Quiz and assessment system  
-- Student progress tracking and analytics  
-- Modular and scalable frontend architecture  
-- User-friendly interface with clean design  
+- Fully responsive UI for desktop and mobile
+- Interactive course and lesson modules
+- Quiz and assessment system
+- Student progress tracking and analytics
+- Modular and scalable frontend architecture
+- User-friendly interface with clean design
 
 ---
 
 ## 🛠 Tech Stack
-- **HTML5 & CSS3** – Semantic markup & responsive layouts  
-- **JavaScript** – Interactive features and dynamic UI  
-- **Vanilla JS / Framework-ready** – Easy to integrate with modern frameworks  
+- HTML5 & CSS3 – Semantic markup & responsive layouts
+- JavaScript – Interactive features and dynamic UI
+- Vanilla JS / Framework-ready – Easy to integrate with modern frameworks
 
 ---
 
 ## 📂 Project Structure
+```text
 edutech/
 ├─ index.html
 ├─ css/
-│ ├─ styles.css
+│  ├─ styles.css
 ├─ js/
-│ ├─ main.js
+│  ├─ main.js
 ├─ assets/
-│ ├─ images/
-│ ├─ icons/
+│  ├─ images/
+│  ├─ icons/
 └─ README.md
-
 
 ---
 
+⚡ Getting Started
+Clone the repository
 
-## ⚡ Getting Started
-
-### Clone the repository
-```bash
 git clone https://github.com/codebyalpesh/edutech.git
 cd edutech
+
+Open in Browser
+
+Simply open index.html in your favorite browser or use Live Server in VS Code.
+
 ---
 
 🎯 Purpose
@@ -63,7 +66,8 @@ Self-paced learning projects
 ---
 
 📸 Screenshots
-<img width="1366" height="4169" alt="edutech" src="https://github.com/user-attachments/assets/1e6bbae9-bfa6-4133-9f28-a17e16cf09c1" />
+
+<img width="1366" height="4169" alt="edutech" src="https://github.com/user-attachments/assets/019a3fe8-8d47-49c3-bb18-5abb6aaa3d0d" />
 
 ---
 
