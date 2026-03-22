@@ -1,0 +1,28 @@
+/* ========================= responsive.css ========================= */
+@media (min-width: 640px) {
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .container {
+        max-width: 48rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 64rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 80rem;
+    }
+}

@@ -1,0 +1,123 @@
+/* =========================
+   PROMO SECTION
+========================= */
+
+.promo-section {
+  position: relative;
+  background: var(--color-primary-900);
+  color: var(--color-text-inverse);
+  overflow: hidden;
+  padding: var(--space-3xl) 0;
+}
+
+/* Background Glow */
+.promo__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255,255,255,0.15), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1), transparent 40%);
+  z-index: 0;
+}
+
+/* Content */
+.promo__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+/* Badge */
+.promo__badge {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary-700);
+  background: rgba(255,255,255,0.9);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+/* Title */
+.promo__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text-inverse);
+  max-width: 620px;
+}
+
+/* Description */
+.promo__description {
+  font-size: var(--font-size-md);
+  color: rgba(255,255,255,0.85);
+  max-width: 520px;
+}
+
+/* Actions */
+.promo__actions {
+  margin-top: var(--space-sm);
+}
+
+/* =========================
+   BUTTON ENHANCEMENT
+========================= */
+
+.promo-section .btn--primary {
+  background: var(--color-white);
+  color: var(--color-primary-600);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.promo-section .btn--primary:hover {
+  background: var(--color-primary-100);
+  color: var(--color-primary-700);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.promo__content > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.promo__content > *:nth-child(1) { animation-delay: 0.1s; }
+.promo__content > *:nth-child(2) { animation-delay: 0.2s; }
+.promo__content > *:nth-child(3) { animation-delay: 0.3s; }
+.promo__content > *:nth-child(4) { animation-delay: 0.4s; }
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+
+  .promo__title {
+    font-size: var(--font-size-xl);
+  }
+
+  .promo__description {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .promo__title {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .promo__description {
+    font-size: var(--font-size-lg);
+  }
+}

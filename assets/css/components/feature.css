@@ -1,0 +1,183 @@
+/* =========================
+   FEATURE SECTION
+========================= */
+
+.feature {
+  position: relative;
+  background: var(--color-bg);
+  padding: var(--space-3xl) 0;
+}
+
+/* Subtle Section Separation */
+.feature::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.02),
+    transparent
+  );
+  pointer-events: none;
+}
+
+/* Wrapper */
+.feature__wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Content */
+.feature__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Badge */
+.feature__badge {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary-600);
+  background: rgba(99,102,241,0.1);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  width: fit-content;
+}
+
+/* Title */
+.feature__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  color: var(--color-text);
+  max-width: 520px;
+}
+
+/* Description */
+.feature__description {
+  font-size: var(--font-size-md);
+  color: var(--color-text-muted);
+  max-width: 480px;
+}
+
+/* Actions */
+.feature__actions {
+  margin-top: var(--space-sm);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.feature__image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Glow Effect */
+.feature__image-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  background: radial-gradient(circle, rgba(99,102,241,0.15), transparent 70%);
+  filter: blur(25px);
+  z-index: 0;
+}
+
+/* Image */
+.feature__image {
+  position: relative;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+  z-index: 1;
+}
+
+/* Hover */
+.feature__image:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.feature__content > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.feature__content > *:nth-child(1) { animation-delay: 0.1s; }
+.feature__content > *:nth-child(2) { animation-delay: 0.2s; }
+.feature__content > *:nth-child(3) { animation-delay: 0.3s; }
+.feature__content > *:nth-child(4) { animation-delay: 0.4s; }
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  .feature {
+    text-align: center;
+  }
+
+  .feature__content {
+    align-items: center;
+  }
+
+  .feature__description {
+    max-width: 100%;
+  }
+
+  .feature__actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .feature__image-wrapper {
+    margin-top: var(--space-lg);
+  }
+
+/* =========================
+   FEATURE (REVERSED FIX)
+========================= */
+
+  /* Always stack properly */
+  .feature .row {
+    flex-direction: column;
+    row-gap: var(--space-2xl);
+  }
+
+  /* Ensure content comes first */
+  .feature .col-md-6:first-child {
+    order: 1;
+  }
+
+  /* Image comes second */
+  .feature .col-md-6:last-child {
+    order: 2;
+  }
+
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+  .feature__title {
+    font-size: var(--font-size-3xl);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+  .feature__description {
+    font-size: var(--font-size-lg);
+  }
+}

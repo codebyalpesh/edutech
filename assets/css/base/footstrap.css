@@ -1,0 +1,12 @@
+/* ========================= layout.css ========================= */
+.section {
+    padding-block: var(--space-2xl);
+}
+
+.section-sm {
+    padding-block: var(--space-xl);
+}
+
+.section-lg {
+    padding-block: var(--space-3xl);
+}

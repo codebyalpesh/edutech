@@ -1,0 +1,215 @@
+/* ========================= NAVBAR SYSTEM ========================= */
+
+.header {
+  width: 100%;
+  z-index: var(--z-fixed);
+  background: transparent;
+}
+
+.navbar {
+  background: var(--color-primary-900);
+  padding-block: var(--space-sm);
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+/* ========================= BRAND ========================= */
+
+.navbar-brand {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white) !important;
+}
+
+/* ========================= NAV LINKS ========================= */
+
+.navbar .nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: rgba(255,255,255,0.85) !important;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-white) !important;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link.show {
+  color: var(--color-white) !important;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ========================= CHEVRON ========================= */
+
+.nav-chevron {
+  font-size: 10px;
+  transition: transform 0.2s ease;
+}
+
+.nav-item.show .nav-chevron {
+  transform: rotate(180deg);
+}
+
+/* ========================= DROPDOWN ========================= */
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* Desktop */
+.dropdown-menu {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xs);
+  min-width: 220px;
+  display: none;
+}
+
+.nav-item.show > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.dropdown-item:hover {
+  background: var(--color-primary-50);
+  color: var(--color-primary-600);
+}
+
+/* ========================= TOGGLER ========================= */
+
+.navbar-toggler {
+  border: none;
+  padding: var(--space-xs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-white);
+  background-image: none;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-white);
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -7px;
+}
+
+.navbar-toggler-icon::after {
+  top: 7px;
+}
+
+/* ========================= RESPONSIVE ========================= */
+
+@media (min-wdth: 1024px) {
+  .navbar {
+    height: 76px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .navbar {
+    height: auto;
+  }
+
+  /* Collapse container */
+  .navbar-collapse {
+    margin-top: var(--space-md);
+    padding: var(--space-md);
+    background: var(--color-primary-900);
+    border-radius: var(--radius-lg);
+  }
+
+  /* Nav list */
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  /* Nav items = card style */
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    background: rgba(255,255,255,0.04);
+  }
+
+  .nav-link:hover {
+    background: rgba(255,255,255,0.08);
+  }
+
+  /* Active state */
+  .nav-link.active {
+    background: rgba(255,255,255,0.12);
+  }
+
+  /* Dropdown menu (nested feel) */
+  .dropdown-menu {
+    position: static;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin-top: var(--space-xs);
+    padding-left: var(--space-sm);
+  }
+
+  /* Dropdown items */
+  .dropdown-item {
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    color: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.03);
+  }
+
+  .dropdown-item:hover {
+    background: rgba(255,255,255,0.08);
+    color: var(--color-white);
+  }
+
+  /* CTA button */
+  .header .btn {
+    width: 100%;
+    margin-top: var(--space-md);
+    text-align: center;
+  }
+}
