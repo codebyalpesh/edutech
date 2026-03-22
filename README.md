@@ -43,17 +43,13 @@ edutech/
 
 ---
 
+
 ## ⚡ Getting Started
 
 ### Clone the repository
 ```bash
 git clone https://github.com/codebyalpesh/edutech.git
 cd edutech
-
-Open in Browser
-
-Simply open index.html in your favorite browser or use Live Server in VS Code.
-
 ---
 
 🎯 Purpose
