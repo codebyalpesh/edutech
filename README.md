@@ -29,7 +29,6 @@ Check out the live demo here: [EduTech Live](https://codebyalpesh.github.io/edut
 ---
 
 ## 📂 Project Structure
-```text
 edutech/
 ├─ index.html
 ├─ css/
