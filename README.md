@@ -54,6 +54,8 @@ Open in Browser
 
 Simply open index.html in your favorite browser or use Live Server in VS Code.
 
+---
+
 🎯 Purpose
 
 EduTech enhances online learning by providing a clean, interactive, and modular platform suitable for:
@@ -62,8 +64,12 @@ Educational institutions
 Online course platforms
 Self-paced learning projects
 
+---
+
 📸 Screenshots
 <img width="1366" height="4169" alt="edutech" src="https://github.com/user-attachments/assets/1e6bbae9-bfa6-4133-9f28-a17e16cf09c1" />
+
+---
 
 📄 License
 
